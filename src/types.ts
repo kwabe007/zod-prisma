@@ -33,7 +33,7 @@ export const getZodConstructor = (
 				zodType = 'jsonSchema'
 				break
 			case 'Boolean':
-				zodType = 'z.boolean()'
+				zodType = 'z.coerce.boolean()'
 				break
 			// TODO: Proper type for bytes fields
 			case 'Bytes':
